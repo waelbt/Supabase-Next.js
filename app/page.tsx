@@ -1,3 +1,5 @@
 export default async function Page() {
-  return null;
+	return (
+		<h1 className="text-3xl font-bold underlinetext-white ">let's started</h1>
+	);
 }
