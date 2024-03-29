@@ -4,6 +4,7 @@ import "./globals.css";
 import "@mantine/core/styles.css";
 
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,7 +22,13 @@ export default function RootLayout({
 			<head>
 				<ColorSchemeScript />
 			</head>
-			<body className={inter.className}>
+			<body className={inter.className + 'h-screen w-screen flex flex-col'}>
+				{/* <div className="inline-flex">
+					<Link href="/admin">Admin</Link>
+					<Link href="/auth/login">login</Link>
+					<Link href="/business">Admin</Link>
+					<Link href="/">home</Link>
+				</div> */}
 				<MantineProvider defaultColorScheme="dark">{children}</MantineProvider>
 			</body>
 		</html>

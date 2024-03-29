@@ -9,6 +9,14 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			screens: {
+				'max-2xl': {'max': '48em'},
+				xs: "36em", // 576px
+				sm: "48em", // 768px
+				md: "62em", // 992px
+				lg: "75em", // 1200px
+				xl: "88em", // 1400px
+			},
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic":
